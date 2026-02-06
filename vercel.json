@@ -2,12 +2,12 @@
   "version": 2,
   "rewrites": [
     {
-      "source": "/admin/:path*",
-      "destination": "/admin-dashboard/:path*"
+      "source": "/admin/(.*)",
+      "destination": "/admin/index.html"
     },
     {
-      "source": "/(.*)",
-      "destination": "/member-portal/$1"
+      "source": "/((?!admin|assets|favicon.ico).*)",
+      "destination": "/index.html"
     }
   ]
 }

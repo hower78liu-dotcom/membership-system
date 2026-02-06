@@ -1,0 +1,11 @@
+{
+  "name": "membership-system-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "mkdir dist && cd admin-dashboard && npm install && npm run build && cd ../member-portal && npm install && npm run build && cd .. && cp -r member-portal/dist/* dist/ && mkdir dist/admin && cp -r admin-dashboard/dist/* dist/admin/"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
