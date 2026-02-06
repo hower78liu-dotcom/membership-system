@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "rewrites": [
+    {
+      "source": "/admin/:path*",
+      "destination": "/admin-dashboard/:path*"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/member-portal/$1"
+    }
+  ]
+}
